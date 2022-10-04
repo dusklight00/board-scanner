@@ -10,7 +10,7 @@ To install the required dependencies, use the command
 pip install -r requirements.txt
 ```
 
-Once all the dependencies are installed, go inside `scripts` folder <br /><br />
+Once all the dependencies are installed, go inside `scripts` folder <br />
 
 **run-clean.sh** - Cleans the `output` folder <br />
 **run-scan.sh** - Scans the board present in `raw` folder using a document-scanner <br />
