@@ -1,8 +1,8 @@
-import os
+import sys
+sys.path.append("../")
 
-def clean_folder(folder_path):
-  for file_name in os.listdir(folder_path):
-    full_file_path = os.path.join(folder_path, file_name)
-    os.remove(full_file_path)
+from packages.utils import clean_folder
 
-clean_folder("output")
+OUTPUT_FOLDER_PATH = "output"
+
+clean_folder(OUTPUT_FOLDER_PATH)

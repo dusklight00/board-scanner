@@ -300,3 +300,10 @@ class DocScanner(object):
         basename = os.path.basename(image_path)
         cv2.imwrite(OUTPUT_DIR + '/' + basename, thresh)
         print("Proccessed " + basename)
+
+scanner = DocScanner(interactive=False)
+
+def scan_folder(folder_path):
+    for image_name in os.listdir(folder_path):
+        full_path = os.path.join(folder_path, image_name)
+        scanner.scan(full_path)

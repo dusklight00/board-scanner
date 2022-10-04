@@ -1,12 +1,8 @@
-from pydoc import Doc
-from packages.scanner import DocScanner
-import os
+import sys
+sys.path.append("..")
 
-scanner = DocScanner(interactive=False)
+from packages.scanner import scan_folder
 
-def scan_folder(folder_path):
-    for image_name in os.listdir(folder_path):
-        full_path = os.path.join(folder_path, image_name)
-        scanner.scan(full_path)
-        
-scan_folder("raw")
+RAW_FOLDER_PATH = "raw"
+
+scan_folder(RAW_FOLDER_PATH)
