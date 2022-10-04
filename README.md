@@ -10,7 +10,8 @@ To install the required dependencies, use the command
 pip install -r requirements.txt
 ```
 
-Once all the dependencies are installed, go inside `scripts` folder <br />
+Once all the dependencies are installed, go inside `scripts` folder <br /><br />
+
 **run-clean.sh** - Cleans the `output` folder <br />
 **run-scan.sh** - Scans the board present in `raw` folder using a document-scanner <br />
 **run-pdf-converter.sh** - Converts the scanner output in `output` folder into a PDF <br />
@@ -23,7 +24,7 @@ Once all the dependencies are installed, go inside `scripts` folder <br />
 
 ### Output
 
-![sample-output](sample/sample-input.png)
+![sample-output](sample/sample-output.png)
 
 ## Real-world Deployment Example
 
